@@ -16,8 +16,6 @@ def index(request):
 def quotes(request):
     quotes = Quote.objects.all()
 
-    print("quotes are", quotes)
-
     return render(request, "index.html", {"quotes", quotes})
 
 def db(request):
