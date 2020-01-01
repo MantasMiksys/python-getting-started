@@ -2,14 +2,12 @@
 {% load static %}
 
 {% block content %}
+
+<div class="jumbotron jumbotron-fluid">
 <div class="container">
-<h2>Quote of the day</h2>
--- Author
-
-{% for quote in quotes %}
-    <li>{{ quote.quote }}</li>
-{% endfor %}
-
-{{ quotes|length }}
+    <h2 class="display-4">{{ quote.quote }}</h2>
+    <p class="lead">-- {{ quote.author }}</p>
 </div>
+</div>
+
 {% endblock %}
